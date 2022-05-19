@@ -1,3 +1,4 @@
+/* stylelint-disable docusaurus/copyright-header */
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -5,26 +6,116 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+/*:root {
+  --ifm-color-primary: #FC5F3A;
+  --ifm-color-primary-dark: #fc461b;
+  --ifm-color-primary-darker: #fb3a0c;
+  --ifm-color-primary-darkest: #d62b03;
+  --ifm-color-primary-light: #fc7859;
+  --ifm-color-primary-lighter: #fd8468;
+  --ifm-color-primary-lightest: #fda996;
+  --ifm-code-font-size: 90%;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}*/
+
+/**
+---------------------
+**/
+:root {
+  --ifm-color-primary: #FC5F3A;
+  --ifm-color-primary-dark: #fc461b;
+  --ifm-color-primary-darker: #fb3a0c;
+  --ifm-color-primary-darkest: #d62b03;
+  --ifm-color-primary-light: #fc7859;
+  --ifm-color-primary-lighter: #fd8468;
+  --ifm-color-primary-lightest: #fda996;
+  --ifm-code-font-size: 90%;
+}
+
+.admonition-shell {
+  --ra-admonition-background-color: rgb(41, 45, 62) !important;
+  --ra-admonition-color: #ffffff;
+}
+
+.admonition a {
+  color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+button {
+  outline: none;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+button[class^='copyButton'] {
+  color: white;
+}
+
+/* source: https://fonts.googleapis.com/css?family=Montserrat:400,600,700 */
+/* cyrillic-ext */
+
+a[class~="menu__link"][tabindex]{
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+.markdown h1:first-child {
+    --ifm-h1-font-size: 2.4rem;
+    margin-bottom: calc( var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading) );
+}
+
+.markdown > h2 {
+    --ifm-h2-font-size: 1.8rem;
+    margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
+    margin-top: calc(var(--ifm-h2-vertical-rhythm-top) * var(--ifm-leading));
+}
+
+.markdown > h3 {
+    --ifm-h3-font-size: 1.4rem;
+    margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
+    margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
+}
+
+.unique-tabs .tabs__item--active {
+    background-color: var(--ifm-tabs-color-active);
+    border: 0px;
+    border-radius: var(--ifm-global-radius);
+    color: #fff;
+}
+
+.unique-tabs .tabs__item {
+    line-height: 16px;
+    margin-right: 8px;
+}
+
+/* 嵌套Tab样式，缩小第二层的tab */
+.tabs-container .tabs-container .tabs__item{
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+a[class^='cardContainerLink_node_modules']{
+  color: #170703;
+}
+
+a[class^='theme-edit-this-page']{
+  display: none;
 }

@@ -16,38 +16,10 @@ const config = {
   trailingSlash: false,
   organizationName: 'GrowingIO', // Usually your GitHub org/user name.
   projectName: 'knowledge-Base', // Usually your repo name.
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
-    ],
-  ],
-
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       navbar: {
-        title: '知识库',
+        title: '',
         logo: {
           alt: 'GrowingIO Logo',
           src: 'img/logo.svg',
@@ -58,11 +30,16 @@ const config = {
             type: 'doc',
             docId: 'home',
             position: 'left',
-            label: 'SDK',
+            label: '知识库',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://www.growingio.com/',
+            label: '官网',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/growingio',
             label: 'GitHub',
             position: 'right',
           },
@@ -75,25 +52,25 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'SDK',
-                to: '/docs',
+                label: '知识库',
+                to: '/docs/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'SDK',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Android',
+                href: 'https://github.com/growingio/growingio-sdk-android-autotracker',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'iOS',
+                href: 'https://github.com/growingio/growingio-sdk-ios-autotracker',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Web',
+                href: 'https://github.com/growingio/growingio-sdk-js-autotracker',
               },
             ],
           },
@@ -101,12 +78,16 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                href: 'https://www.growingio.com/',
+                label: '官网',
+              },
+              {
+                label: '博客',
                 to: '/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/growingio',
               },
             ],
           },
@@ -116,8 +97,32 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['groovy','java','kotlin','swift','objectivec','php','dart'],
       },
-    }),
+    },
+
+    presets: [
+      [
+        '@docusaurus/preset-classic',
+        {
+          docs: {
+            sidebarPath: require.resolve('./sidebars.js'),
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+          },
+          blog: {
+            showReadingTime: true,
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            // editUrl:
+              // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          },
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          },
+        },
+      ],
+    ],
 
     plugins: [
       [
@@ -126,6 +131,33 @@ const config = {
           hashed: true,
           language: ["en","zh"],
         }
+      ],
+      // [
+      //   '@docusaurus/plugin-content-docs',
+      //   {
+      //     id: 'question',
+      //     path: 'question',
+      //     routeBasePath: 'question',
+      //     editUrl: 'https://github.com/growingio/growingio-sdk-docs/edit/master/',
+      //     sidebarPath: require.resolve('./sidebarsQuestion.js'),
+      //     showLastUpdateTime: true,
+      //   }
+      // ],
+      [
+        "docusaurus-plugin-includes",
+        {
+          injectedHtmlTags:{
+            preBodyTags: [
+              {
+                tagName: "script",
+                attributes: {
+                  type: "text/javascript",
+                  src: "https://growingio.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-dtzt95/b/3/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?jsI18nTransformer=existing&locale=en-US&collectorId=d067cced",
+                },
+              }
+            ],
+          },
+        },
       ],
     ],
 };
