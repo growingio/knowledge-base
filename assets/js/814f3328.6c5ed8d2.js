@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkknowledge_base=self.webpackChunkknowledge_base||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/knowledge-base/blog/welcome"}]}')}}]);

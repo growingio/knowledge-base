@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkknowledge_base=self.webpackChunkknowledge_base||[]).push([[2010],{8367:function(e){e.exports=JSON.parse('[{"label":"facebook","permalink":"/knowledge-base/blog/tags/facebook","count":1},{"label":"hello","permalink":"/knowledge-base/blog/tags/hello","count":1},{"label":"docusaurus","permalink":"/knowledge-base/blog/tags/docusaurus","count":1}]')}}]);
