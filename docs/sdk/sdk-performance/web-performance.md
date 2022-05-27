@@ -4,7 +4,7 @@ title: Web JS SDK 性能说明
 ---
 
 :::tip 提示
-支持性能说明下载：[Web JS SDK性能说明PDF](../../../static/pdf/Web%20JS%20SDK%20性能说明.pdf)
+支持性能说明文档下载：[Web JS SDK性能说明PDF](../../../static/pdf/Web%20JS%20SDK%20性能说明.pdf)
 :::
 
 ## Web JS SDK加载

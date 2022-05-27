@@ -3,7 +3,7 @@ slug: /sdk-performance
 title: SDK 性能
 ---
 
-包括iOS，Android，Web SDK测试性能指标。
+包括iOS，Android，Web SDK测试性能说明。
 
 
 ```mdx-code-block

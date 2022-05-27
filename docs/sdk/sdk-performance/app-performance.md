@@ -3,7 +3,7 @@ sidebar_position: 1
 title: APP SDK 性能说明
 ---
 :::tip 提示
-支持性能说明下载：[APP SDK性能说明PDF](../../../static/pdf/APP%20SDK%20%E6%80%A7%E8%83%BD%E8%AF%B4%E6%98%8E.pdf)
+支持性能说明文档下载：[APP SDK性能说明PDF](../../../static/pdf/APP%20SDK%20%E6%80%A7%E8%83%BD%E8%AF%B4%E6%98%8E.pdf)
 :::
 ## 1.测试概述
 ### 1.1 测试目的
